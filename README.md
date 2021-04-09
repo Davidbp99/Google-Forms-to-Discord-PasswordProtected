@@ -8,7 +8,12 @@
 
 ![script editor](https://pillow.s-ul.eu/iLfUuy9l.png)
 
-4) Paste the contents of `code.gs`.
+4) Paste the contents of `code.gs`. Make sure each user* have content inside it. Even if it would just be
+```javascript
+var user* = {
+"agsdgshfddfhfhdsdafag":"System"
+}
+```
 
 5) Open Discord and make a channel where you'd like the responses to be sent.
 6) Create a webhook and copy the URL. Replace `WEBHOOKURL` at the top of the script with the URL you copied.
