@@ -4,7 +4,7 @@ today_date = Utilities.formatDate(new Date(), "GMT-0", "HH:mm:ss  dd/MM/yyyy");
 
 // config start
 var POST_URL = "" // for error catching
-
+var trash_url = "" // if you want to send people that should not have access to another channel
 var whoposted = "Someone that should not have access"
 
 
@@ -113,7 +113,7 @@ if (parts[0] == password){
 } 
 else{
   // this runs if none of the above could be found
-      POST_URL = ""; // if you need to send it to a trash channel
+      POST_URL = trash_url; // if you need to send it to a trash channel
     }
     }}}}
 
