@@ -1,7 +1,6 @@
 ![THIS](https://user-images.githubusercontent.com/40523727/114236868-8c164500-9982-11eb-8804-0d167a25f601.png)
 
 # Basic Setup
-The example form I used to make this [Example Form](https://docs.google.com/forms/u/0/)
 1) Create a [Google Form](https://docs.google.com/forms/u/0/) for use with this script
 2) Make the form however you'd like.
 
@@ -219,3 +218,8 @@ An optional customization you can make to footer text, is to add an icon image w
 
 ![image](https://user-images.githubusercontent.com/40523727/114236824-7b65cf00-9982-11eb-9aef-25b6f144d10f.png)
 ![image](https://user-images.githubusercontent.com/40523727/114236868-8c164500-9982-11eb-8804-0d167a25f601.png)
+
+## Example Form
+The example form I used to make this [Example Form](https://docs.google.com/forms/u/0/)
+### Credits
+I used the images from [From other script](https://github.com/Iku/Google-Forms-to-Discord)
