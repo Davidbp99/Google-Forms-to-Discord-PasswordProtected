@@ -87,28 +87,26 @@ for (var password in user){
     if (parts[0] == password){
      
      whoposted = user[password];
-      // Once the form type has been found, we can break out of the loop.
+      
       break;
     }for (password in user2) {
 if (parts[0] == password){
       
      whoposted = user2[password];
-      // Once the form type has been found, we can break out of the loop.
+  
       break;
 } for (password in user3) {
 if (parts[0] == password){
     
      whoposted = user3[password];
-      // Once the form type has been found, we can break out of the loop.
+      
       break;
 } for (password in user4) {
 if (parts[0] == password){
-      // Set the form_type variable (which we use later on) to our Key, and set the webhook variable, POST_URL to the value associated with that key.
+      
      whoposted = user4[password];
 
-     // checks if cm got the right to use ruleupdate. If yes then it will skip and then break out of the loop
-     
-      // Once the form type has been found, we can break out of the loop.
+    
       break;
 } 
 else{
