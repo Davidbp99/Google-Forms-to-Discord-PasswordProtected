@@ -113,7 +113,7 @@ if (parts[0] == password){
 } 
 else{
   // this runs if none of the above could be found
-      POST_URL = "https://discord.com/api/webhooks/830170868583235625/EK4TjO323FEgnOZZ8wq8Fh_vjnv6rkgGVYnbMG_QsnSIJ4z9Qkh9Y8RXYrTFp_Be8ft7"; // if you need to send it to a trash channel
+      POST_URL = ""; // if you need to send it to a trash channel
     }
     }}}}
 
@@ -122,7 +122,7 @@ else{
 
   
   // This loop will get all of the Section 2 answers. This skips the answer of the first section.
-for (var i = 2; i < response.length; i++) {
+for (var i = 2; i < response.length; i++) { // To not send the password over this will need to be set to 2. 
     var question = response[i].getItem().getTitle();
     var answer = response[i].getResponse();
     try {
@@ -154,7 +154,7 @@ for (var i = 2; i < response.length; i++) {
   }
    var posted = "\n" + "This was sent by " + whoposted
   var time = today_date + posted
- Utilities.sleep(2000)
+
   var options = {
     "method": "post",
     "contentType": "application/json",
