@@ -95,7 +95,7 @@ Step 2 (replace * with the number you gave above. If you made more then one you 
 ```javascript
 for (password in user*) {
 if (parts[0] == password){
-      // Set the form_type variable (which we use later on) to our Key, and set the webhook variable, POST_URL to the value associated with that key.
+     
      whoposted = user*[password];
 
     
