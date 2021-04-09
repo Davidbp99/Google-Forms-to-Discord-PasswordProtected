@@ -1,7 +1,7 @@
 ![THIS](https://user-images.githubusercontent.com/40523727/114236868-8c164500-9982-11eb-8804-0d167a25f601.png)
 
 # Basic Setup
-
+The example form I used to make this [Example Form](https://docs.google.com/forms/u/0/)
 1) Create a [Google Form](https://docs.google.com/forms/u/0/) for use with this script
 2) Make the form however you'd like.
 
@@ -115,7 +115,7 @@ if (parts[0] == password){
     if (user* == "false"){
        // checks if the users form submission got the correct form_type to run next code. If not then it will skip it
     if (form_type == "your thing you want to restrict them with") {
-      POST_URL = "";
+      POST_URL = ""; // send it to another channel or trash channel
 
      }}
      
