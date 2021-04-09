@@ -116,7 +116,7 @@ for (password in user*) {
 if (parts[0] == password){
      whoposted = user*[password];
 
-    if (user* == "false"){
+    if (usersperms == "false"){
        // checks if the users form submission got the correct form_type to run next code. If not then it will skip it
     if (form_type == "your thing you want to restrict them with") {
       POST_URL = ""; // send it to another channel or trash channel
