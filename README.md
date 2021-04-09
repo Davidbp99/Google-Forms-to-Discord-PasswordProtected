@@ -222,4 +222,4 @@ An optional customization you can make to footer text, is to add an icon image w
 ## Example Form
 The example form I used to make this [Example Form](https://docs.google.com/forms/u/0/)
 ### Credits
-I used the images from [From other script](https://github.com/Iku/Google-Forms-to-Discord)
+I used the images from [other script](https://github.com/Iku/Google-Forms-to-Discord)
