@@ -127,6 +127,49 @@ if (parts[0] == password){
       break;
 } 
 ```
+### Style each send request
+Want to have one part of the google form request to be inlined (content being on one line and not line one, line two, line three, and so on)
+```javascript
+// checks if it is the correct form_type. If not then it should use the default
+if (form_type == "thequestion") {
+      
+ for (var j = 0; j < parts.length; j++) {
+      if (j == 0) {
+        items.push({
+          "name": question,
+          "value": parts[j],
+          "inline": true
+        });
+      } else {
+        items.push({
+          "name": question.concat(" (cont.)"),
+          "value": parts[j],
+          "inline": true
+        });
+      }
+    }
+    }
+  }
+  else { // you just need to have the else part one time if you are going to style more then 1.
+   for (var j = 0; j < parts.length; j++) {
+      if (j == 0) {
+        items.push({
+          "name": question,
+          "value": parts[j],
+          "inline": false
+        });
+      } else {
+        items.push({
+          "name": question.concat(" (cont.)"),
+          "value": parts[j],
+          "inline": false
+        });
+      }
+    }
+    }
+  
+  }
+```
 ### Author
 This option adds an author block to the embed. The author block (object) includes three values:
   * name - the name field.
