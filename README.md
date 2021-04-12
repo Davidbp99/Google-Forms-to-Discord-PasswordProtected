@@ -108,7 +108,7 @@ if (parts[0] == password){
 Need to restrict one of the users to not be enabled to use a part of the form.
 ```javascript
 // add this to the config area
-var usersperms = false // if it is false then
+var usersperms = false // if it is false then they can't use that part of the google form.
  
 ```
 ```javascript
@@ -235,8 +235,8 @@ Allows for a thumbnail to be displayed in the embed.
     "title": "TOP TEXT CHANGE THIS IN SCRIPT",
     "fields": items,
     "thumbnail": {
-      "url": "URL CHANGE THIS IN SCRIPT"
-    }
+      "url": avatarlogo
+    },
   }]
 }
 ```
@@ -244,13 +244,15 @@ Allows for a thumbnail to be displayed in the embed.
 ### Footer icon
 An optional customization you can make to footer text, is to add an icon image which will be displayed next to it.
 ```javascript
+var footerlogo = ""
 {
   "embeds" :[{
-    "title": "TOP TEXT CHANGE THIS IN SCRIPT",
-    "fields": items,
-    "footer": {
-      "text": "BOTTOM TEXT CHANGE THIS IN SCRIPT",
-      "icon_url": "URL CHANGE THIS IN SCRIPT"
+     "title": form_type,
+        "color": colornice,
+        "fields": items,
+        "footer": {
+          "text": time,
+          "icon_url": footerlogo,
     }
   }]
 }
