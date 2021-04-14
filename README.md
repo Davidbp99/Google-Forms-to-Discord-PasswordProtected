@@ -257,7 +257,49 @@ var footerlogo = ""
   }]
 }
 ```
+## I just want to send my forms items to one place and not x amount of locations
+Remove the following code from your script and you will make it just send your submissions to one channel and not more.
+```javascript
+// config section
 
+var URL_type_dict = {
+ // "google form question from a place": "discord hook", 
+
+}
+
+var color_type_dict = {
+  // "google form question from a place": "color"
+ 
+}
+//
+
+var answer = response[0].getResponse() // We need to get the place where you input the sections
+  // To get the actual text of the first questions answer, we need to filter the unnecessary characters out using regex.
+  try {
+    var parts = answer.match(/[\s\S]{1,1024}/g) || [];
+  } catch (e) {
+    var parts = answer;
+  }
+  
+  // Now that we have the text of the answer, since it matches the Keys in our dictionary, we can just search for the key using a loop to get our configuration!
+  for (var key in URL_type_dict){
+    
+    // If the answer matches a key (aka a type)
+    if (parts[0] == key){
+      // Set the form_type variable (which we use later on) to our Key, and set the webhook variable, POST_URL to the value associated with that key.
+      var form_type = key;
+      POST_URL = URL_type_dict[key];
+       colornice = color_type_dict[key];
+      // Once the form type has been found, we can break out of the loop.
+      break;
+    }
+    else{
+      // Incase an error arises, we can inform the user through an embed.
+      var form_type = "This form type is not handled!"; 
+    }
+  }
+}
+```
 
 
 
